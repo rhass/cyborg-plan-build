@@ -23,8 +23,8 @@ const logger = require(path.normalize('../../lib/logger.js'));
 describe("Logger Class", function () {
   describe("Color output", function () {
     it("checks to see if the TTY is interactive", function () {
-      let color = logger.colorSupported;
-
+      let logger = new logger.constructor;
+      expect(logger.colorSupported()).to.equal(true);
     });
     it("checks to see if the user has disabled color log output")
   });
