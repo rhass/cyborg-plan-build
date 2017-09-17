@@ -1,0 +1,10 @@
+#extends: airbnb-base
+parser: babel-eslint
+parserOptions:
+  ecmaVersion: 6
+  ecmaFeatures:
+    modules: true
+    arrowFunctions: true
+    classes: true
+env:
+  node: true

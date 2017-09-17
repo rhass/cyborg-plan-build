@@ -1,0 +1,28 @@
+{
+  "name": "plan-build",
+  "version": "0.1.0",
+  "author": "Ryan Hass",
+  "license": "Apache-2.0",
+  "private": true,
+  "scripts": {
+    "lint": "eslint .",
+    "lint-fix": "eslint . --fix",
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "start": "node ./bin/hab-plan-build"
+  },
+  "dependencies": {
+    "chalk": "^2.1.0",
+    "coffeescript": "^2.0.0-beta5",
+    "docopt": "~0.6.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "chai": "^4.1.2",
+    "debug": "~2.6.3",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "jsdoc": "^3.5.5",
+    "mocha": "^3.5.3"
+  }
+}
